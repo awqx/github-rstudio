@@ -42,8 +42,13 @@ Make sure Git is installed before continuing. And also make a GitHub account.
   - git push -u origin master
     -If this doesn't work, and the error says something about "unrelated histories", use git pull --allow-unrelated-histories 
 - The file should be in GitHub, and the pull/push buttons in RStudio will now work
-
-
+####Pushing and Pulling
+- At this point, the Push/Pull buttons in the Git tab of RStudio should work. 
+- First, pull from GitHub to make sure everything is up-to-date. 
+- In order to push, you have to make a commit first (see above), and then press the push button. 
+  - If pushing doesn't work with the buttons, try going to the Git shell and using the command:
+  - git push origin example-branch
+  - (of course, replace "example-branch" with the branch you're pushing to.)
 
 ###GitHub to RStudio
 - In RStudio: New Project --> Version Control --> Clone Git Repository
