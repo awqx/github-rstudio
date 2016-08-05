@@ -69,9 +69,7 @@ Examples will be surrounded by [brackets]. Assume anything not surrounded by bra
 - Enter the repository URL
 - Tools --> Shell
   - Type:
-  - git config remote.origin.url
-  - git@github.com:exampleuser/examplerepository.git
-  - 
+  - git config remote.origin.url git@github.com:exampleuser/examplerepository.git
   
 ##Some Other Notes
 - Git can be unnecessarily aggressive. When a command doesn't work, it'll say something like "fatal" in red letters. This is Git's equivalent of an error message; don't be alarmed into thinking something permanently broke
