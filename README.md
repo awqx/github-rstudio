@@ -55,7 +55,7 @@ Examples will be surrounded by [brackets]. Assume anything not surrounded by bra
   - git remote add origin git@github.com:[user]/[repository].git
   - git pull -u origin master
   - git push -u origin master
-####Pushing and Pulling
+###Pushing and Pulling
 - At this point, the Push/Pull buttons in the Git tab of RStudio should work. 
 - First, pull from GitHub to make sure everything is up-to-date. 
 - In order to push, you have to make a commit first (see above), and then press the push button. 
@@ -72,5 +72,5 @@ Examples will be surrounded by [brackets]. Assume anything not surrounded by bra
   - git@github.com:exampleuser/examplerepository.git
   - 
   
-###Some Other Notes
+##Some Other Notes
 - Git can be unnecessarily aggressive. When a command doesn't work, it'll say something like "fatal" in red letters. This is Git's equivalent of an error message; don't be alarmed into thinking something permanently broke
