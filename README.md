@@ -2,12 +2,12 @@
 How to (to the best of my knowledge) properly get GitHub and RStudio to work together. Credit to http://www.r-bloggers.com/rstudio-and-github/ and stackoverflow.com as well as http://www.enoriver.net/2014/10/12/recipe-for-pairing-up-rstudio-with-github/.
 
 
-##Github - The Most Basic Info
+## Github - The Most Basic Info
 Every GitHub repository starts with a master branch. This branch is decisive copy of a project, and edits to the master branch should be done very cautiously. Instead of every team member working directly on the master branch (which would probably cause something to break irreparably), preliminary edits should be made on a new branch . When the new-branch is done, a pull request can be made. When the pull request is approved by the owner of the project, edits from the new branch will be merged into the master branch. The new-branch can then be deleted. 
 
-##RStudio and GitHub
+## RStudio and GitHub
 
-###RStudio to GitHub
+### RStudio to GitHub
 
 Make sure Git is installed before continuing. And also make a GitHub account.
 Examples will be surrounded by [brackets]. Assume anything not surrounded by brackets should be typed verbatim.
@@ -43,7 +43,8 @@ Examples will be surrounded by [brackets]. Assume anything not surrounded by bra
   - git push -u origin master
     -If this doesn't work, and the error says something about "unrelated histories", use git pull --allow-unrelated-histories 
 - The file should be in GitHub, and the pull/push buttons in RStudio will now work
-- Sometimes the past few steps don't work, which is a pain, so let's try another recommendation
+
+Sometimes the past few steps don't work, which is a pain, so let's try another recommendation
 - Go back to GitHub, and remove the repository (if the past steps didn't work, there should be nothing there and nothing will be lost by deleting the repository)
 - Re-create the repository, and make sure you DON'T initialize it with a README.md
 - Options should show something that gives you options, one of which will be "...or push an existing repository from the command line..."
@@ -56,7 +57,7 @@ Examples will be surrounded by [brackets]. Assume anything not surrounded by bra
   - git pull -u origin master
   - git push -u origin master
 
-####Pushing and Pulling
+#### Pushing and Pulling
 - At this point, the Push/Pull buttons in the Git tab of RStudio should work. 
 - First, pull from GitHub to make sure everything is up-to-date. 
 - In order to push, you have to make a commit first (see above), and then press the push button. 
@@ -64,12 +65,12 @@ Examples will be surrounded by [brackets]. Assume anything not surrounded by bra
   - git push origin [example-branch]
   - (of course, replace "example-branch" with the branch you're pushing to.)
 
-###GitHub to RStudio
+### GitHub to RStudio
 - In RStudio: New Project --> Version Control --> Clone Git Repository
 - Enter the repository URL
 - Tools --> Shell
   - Type:
   - git config remote.origin.url git@github.com:exampleuser/examplerepository.git
   
-##Some Other Notes
+## Some Other Notes
 - Git can be unnecessarily aggressive. When a command doesn't work, it'll say something like "fatal" in red letters. This is Git's equivalent of an error message; don't be alarmed into thinking something permanently broke
